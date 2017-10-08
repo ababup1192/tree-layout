@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tree View Layout</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <ul class="tree-menu">
+            <li class="tree-root">
+                <i class="fa fa-th-list" aria-hidden="true"></i>Root
+                <ul class="tree-root-children">
+                    <li>
+                        <div class="object-element" draggable="true">
+                            <p class="control has-icons-left">
+                                <input class="input" type="text" placeholder="Key" value="arr">
+                                <span class="icon is-small is-left">
+                                    <i class="fa fa-key"></i>
+                                </span>
+                            </p>
+                            <ul>
+                                <li>
+                                    <div class="array">
+                                        <i class="fa fa-stack-overflow" aria-hidden="true"></i> Array
+                                        <ul class="tree-root-children">
+                                            <li>
+                                                <div class="array-element" draggable="true">
+                                                    <p>[0]</p>
+                                                    <ul>
+                                                        <li>
+                                                            <p class="control has-icons-left">
+                                                                <input class="input" type="number" placeholder="Number">
+                                                                <span class="icon is-small is-left">
+                                                                    <i class="fa fa-sort-numeric-asc"></i>
+                                                                </span>
+                                                            </p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="array-element" draggable="true">
+                                                    <p>[1]</p>
+                                                    <ul>
+                                                        <li>
+                                                            <p class="control has-icons-left">
+                                                                <input class="input" type="text" placeholder="String">
+                                                                <span class="icon is-small is-left">
+                                                                    <i class="fa fa-sort-alpha-asc"></i>
+                                                                </span>
+                                                            </p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="array-element" draggable="true">
+                                                    <p>[2]</p>
+                                                    <ul>
+                                                        <li>
+                                                            <a class="button">
+                                                                null
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="object-element" draggable="true">
+                            <a class="button">
+                                <span class="icon is-small">
+                                    <i class="fa fa-key"></i>
+                                </span>
+                                <span>obj</span>
+                            </a>
+                            <ul>
+                                <li>
+                                    <div class="object">
+                                        <i class="fa fa-th-list" aria-hidden="true"></i> Object
+                                        <ul class="tree-root-children">
+                                            <li>
+                                                <div class="object-element" draggable="true">
+                                                    <a class="button">
+                                                        <span class="icon is-small">
+                                                            <i class="fa fa-key"></i>
+                                                        </span>
+                                                        <span>is_hidden</span>
+                                                    </a>
+                                                    <ul>
+                                                        <li>
+                                                            <a class="button is-info">true</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="object-element" draggable="true">
+                                                    <a class="button">
+                                                        <span class="icon is-small">
+                                                            <i class="fa fa-key"></i>
+                                                        </span>
+                                                        <span>is_empty</span>
+                                                    </a>
+                                                    <ul>
+                                                        <li>
+                                                            <a class="button is-light">false</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="object-element" draggable="true">
+                                                    <a class="button">
+                                                        <span class="icon is-small">
+                                                            <i class="fa fa-key"></i>
+                                                        </span>
+                                                        <span>num</span>
+                                                    </a>
+                                                    <ul>
+                                                        <li>
+                                                            <a class="button">
+                                                                <span class="icon is-small">
+                                                                    <i class="fa fa-sort-numeric-asc"></i>
+                                                                </span>
+                                                                <span>123</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="object-element" draggable="true">
+                                                    <a class="button">
+                                                        <span class="icon is-small">
+                                                            <i class="fa fa-key"></i>
+                                                        </span>
+                                                        <span>str</span>
+                                                    </a>
+                                                    <ul>
+                                                        <li>
+                                                            <a class="button">
+                                                                <span class="icon is-small">
+                                                                    <i class="fa fa-sort-alpha-asc"></i>
+                                                                </span>
+                                                                <span>abc</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <script src="./bundle.js"></script>
+    <script src="https://use.fontawesome.com/8bac9d1c77.js"></script>
+</body>
+
+</html>
